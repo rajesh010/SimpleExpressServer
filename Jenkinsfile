@@ -17,7 +17,8 @@ pipeline {
             steps {
                 // Run docker-compose up
                 script {
-                    sh 'docker-compose up -d'
+                    // sh 'docker-compose up -d'
+                    sh 'whoami && id && groups && docker-compose up -d'
                 }
             }
         }
